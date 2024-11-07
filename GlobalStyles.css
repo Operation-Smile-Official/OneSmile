@@ -1,0 +1,214 @@
+<style>
+
+/* Import the ff-cocon-pro font from Adobe Fonts */
+@import url("https://use.typekit.net/pyr3fhf.css");
+
+/* Global styles */
+body, .ms-core-overlay {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #333333;
+    background-image: linear-gradient(135deg, #ffffff 5%, #e6f2fb 25%, #eaf4fc 60%, #ffffff 100%);
+    background-size: 100% 100%, 100% 100%;
+}
+
+/* Main content area */
+#contentBox, .CanvasComponent {
+    padding: 0;
+    margin: 0 auto; /* Center align */
+}
+
+/* Section containers: maintain outer shadow but remove inner shadow */
+[data-automation-id="CanvasZone"],
+.CanvasSection,
+[data-automation-id="ControlZone"] {
+    background-color: transparent !important;
+    overflow: hidden;
+    border-radius: 8px; /* Uniform border radius for smoother corners */
+    max-width: 1300px !important; /* Restrict width */
+    margin: 0 auto !important; /* Center align the section */
+}
+
+/* Add shadows to sections for better visual separation */
+.CanvasZone {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Separate sections with slight margin adjustments */
+.fui-FluentProvider {
+    margin: 8px 8px 18px 8px; /* Adjusted margin */
+}
+
+/* General QuickLinks Container Styling */
+[data-automation-id*="QuickLinks"] {
+    padding: 0 !important; /* Reduce padding */
+    margin: 0 auto !important; /* Center align */
+}
+
+/* ButtonCard Global Styling within QuickLinks */
+[data-automation-id*="QuickLinks"] .ButtonCard {
+    background-color: #ffffff !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+    overflow: hidden !important;
+    margin: 3px !important;
+    padding: 0 7px !important;
+    border: 1px solid rgba(211, 211, 211, 0.8) !important;
+    text-align: left !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    max-width: 280px;
+}
+
+/* Specific Styling for Tile Layouts (Center Align) */
+[data-automation-id*="QuickLinks"].tiles .ButtonCard {
+    text-align: center !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* Custom Styling for QuickLinks List Layout (Icon on Left) */
+[data-automation-id*="QuickLinksWebPart"] .ButtonCard.root-196 {
+    padding: 12px !important;
+    padding: 0px 12px !important;
+    margin: 5px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+}
+
+/* Hover Effects */
+[data-automation-id*="QuickLinks"] .ButtonCard:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3) !important;
+    border-color: #005a9e !important;
+    background: #ffffff !important;
+    transform: scale(1.03) !important;
+}
+
+/* Button Content (icons, text) Styling */
+[data-automation-id*="QuickLinks"] .ButtonCard i[data-icon-name] {
+    color: #0F52BA !important;
+    font-size: 22px !important;
+    margin-right: 8px !important;
+    margin-left: 8px !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+
+/* Icon Centering for Tile Layouts */
+[data-automation-id*="QuickLinks"].tiles .ButtonCard i[data-icon-name] {
+    margin-right: 0 !important;
+    margin-bottom: 5px !important;
+}
+
+/* Text Area Styling */
+[data-automation-id*="QuickLinks"] .ButtonCard .textArea-182,
+[data-automation-id*="QuickLinks"] .ButtonCard .labelTextWrapper-186,
+[data-automation-id*="QuickLinks"] .ButtonCard #QuicklinksItemTitle {
+    color: #0F52BA !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
+    line-height: 1.3 !important;
+}
+
+/* Styling for Subtext Area */
+[data-automation-id*="QuickLinks"] .ButtonCard div[class^="descriptionTextWrapper"] {
+    color: #7a7a7a !important;
+    font-size: 12px !important;
+    line-height: 1.1 !important;
+    margin-top: 4px !important;
+}
+
+/* Hover Effects for Text and Icon Colors */
+[data-automation-id*="QuickLinks"] .ButtonCard:hover .textArea-182,
+[data-automation-id*="QuickLinks"] .ButtonCard:hover .labelTextWrapper-186,
+[data-automation-id*="QuickLinks"] .ButtonCard:hover i[data-icon-name] {
+    color: #1e90ff !important;
+    transition: color 0.3s ease !important;
+    text-shadow: 0px 0px 6px rgba(30, 144, 255, 0.7) !important;
+}
+
+/* Icon Padding Adjustments for Consistent Alignment */
+[data-automation-id*="QuickLinks"] .ButtonCard i[class*="icon-"] {
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+}
+
+/* Additional Fallback to Ensure No Reset on Hover */
+[data-automation-id*="QuickLinks"] .ButtonCard:hover * {
+    background-color: inherit !important;
+    color: inherit !important;
+}
+
+/* Sub Navigation Bar Styling */
+div[class*="bottomNavRow"] {
+    background: #ffffff;
+    padding: 14px 0;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Sub Navigation Item Styling */
+div[class*="bottomNavRow"] .ms-HorizontalNavItem-linkText {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 500;
+    padding: 10px;
+    margin-right: 1px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Hover and Active State Styling for Sub Navigation Items */
+div[class*="bottomNavRow"] .ms-HorizontalNavItem-linkText:hover {
+    color: #8a2be2;
+    border-bottom: 3px solid #8a2be2;
+    padding-bottom: 5px;
+}
+
+div[class*="bottomNavRow"] .ms-HorizontalNavItem-linkText.is-selected {
+    color: #1e90ff;
+    border-bottom: 2px solid #1e90ff;
+}
+
+/* Specific Targeting for Global Home Navigation to Remove Grey Bottom Border */
+div.root-138 {
+    border-bottom: 3px solid #ffffff !important;
+    box-shadow: none !important;
+    margin-bottom: 0 !important;
+}
+
+/* Logo Styling Adjustment */
+.logoWrapper-114 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+/* Site Header Title Styling */
+#SiteHeaderTitle, .title-118 {
+    font-family: 'ff-cocon-pro', sans-serif !important;
+    color: #A83F44 !important;
+    font-size: 22px !important;
+    font-weight: 300 !important;
+    font-style: italic !important;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+    padding-top: 5px;
+    text-align: left;
+}
+
+/* Applying the font with a weight of 300 */
+h1, h2, h3,.light-font {
+    font-family: 'ff-cocon-pro', sans-serif !important;
+
+}
+
+
+</style>
