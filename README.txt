@@ -10,7 +10,7 @@ Date last modified: 11/19/2024
     Modification of this file will change the appearance of ALL PAGES. Please test styling changes prior to applying them to this file.
 
 2. TemplateDuplication : 
-    This file contains the scripts and files required to duplicate a site.
+    This folder contains the scripts and files required to duplicate a site.
     
     2.1: CopySiteAsTemplate.ps1 :
         Author: Jackson Ornoff
