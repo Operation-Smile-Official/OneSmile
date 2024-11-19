@@ -1,4 +1,5 @@
 This repository contains all files and scripts relevant to the new OneSmile SharePoint Intranet and its development.
+NOTE: This repository is publicly accessible and may be cloned by anyone. Please take this into account when making any commits
 
 README.TXT Author: Jackson Ornoff
 Date last modified: 11/19/2024
