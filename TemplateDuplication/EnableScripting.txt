@@ -1,0 +1,5 @@
+# BEFORE RUNNING! : Please replace the URL in line 5 with the URL to the URL for the site you wish to allow scripting on. Then copy and run each line in the SharePoint Online Management Shell
+
+Connect-SPOService -Url https://opsmile-admin.sharepoint.com
+
+Set-SPOSite -Identity https://opsmile.sharepoint.com/sites/333-InteractiveLearningCenter -DenyAddAndCustomizePages 0
